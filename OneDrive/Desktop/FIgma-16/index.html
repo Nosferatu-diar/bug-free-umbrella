@@ -1,13 +1,740 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
-</head>
-<body>
-   <header>
-      <b>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae iste nam itaque eos non facilis minima. Neque tempora blanditiis ab molestiae voluptates dolore iusto in explicabo, optio, alias rerum porro.</b>
-   </header>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Figma-16</title>
+		<link rel="stylesheet" href="./src/output.css" />
+	</head>
+	<body>
+		<!-- nav -->
+		<nav class="w-[90%] m-auto 2xl:w-[1400px] flex justify-between pt-5 pb-5">
+			<!-- left -->
+			<div class="flex items-center gap-8">
+				<div class="flex">
+					<a class="flex gap-2" href="./index.html">
+						<img
+							class="cursor-pointer"
+							src="./assets/svg/Logo.svg"
+							alt="Logo"
+						/>
+						<img
+							class="cursor-pointer"
+							src="./assets/img/logo-photo.png"
+							alt="Logo"
+						/>
+					</a>
+				</div>
+				<ul class="flex gap-6 text-[#575756]">
+					<li class="hover:text-blue-500 text-sm"><a href="">Аналитика</a></li>
+					<li class="hover:text-blue-500 text-sm"><a href="">Сообщество</a></li>
+					<li class="hover:text-blue-500 text-sm">
+						<a href="">Для организаций</a>
+					</li>
+				</ul>
+			</div>
+			<!-- right -->
+			<div class="flex gap-5 items-center justify-center">
+				<a href="./src/request.html"
+					><button
+						class="w-[200px] py-3 text-[#3a85f4] rounded-full border border-[#3a85f4] hover:bg-blue-100"
+					>
+						Создать заявку
+					</button></a
+				>
+				<img
+					class="w-[15%] cursor-pointer hover:bg-blue-100 rounded-full"
+					src="/assets/svg/earth.svg"
+					alt="earth"
+				/>
+				<img
+					class="w-[15%] cursor-pointer hover:bg-blue-100"
+					src="/assets/svg/out.svg"
+					alt="earth"
+				/>
+			</div>
+		</nav>
+		<!-- header -->
+		<header class="bg-[#cce7ff] shadow-custom-inset">
+			<div class="w-[90%] m-auto 2xl:w-[1400px] pt-20 grid grid-cols-2">
+				<!-- left -->
+				<div class="flex flex-col gap-10 justify-center">
+					<h1 class="font-bold text-3xl hover:underline decoration-blue-500">
+						Сообщество <br />
+						взаимопомощи между <br />
+						учёными со всего мира
+					</h1>
+					<p class="text-[#2f2f2f] text-xl hover:underline decoration-blue-500">
+						Удобный сервис, который подберёт для вас коллег и поможет <br />
+						наладить с ними взаимовыгодное сотрудничество в областях <br />
+						совместных исследований, соавторства, рецензирования и <br />
+						повышения индекса цитирования.
+					</p>
+
+					<button
+						class="text-white rounded-full bg-blue-700 w-[200px] py-4 hover:bg-blue-600"
+					>
+						Присоединиться
+					</button>
+				</div>
+				<!-- right -->
+				<div>
+					<img src="/assets/img/Frame.png" alt="Frame" />
+				</div>
+			</div>
+		</header>
+		<!-- work -->
+		<section
+			class="flex flex-col items-center pt-20 w-[90%] m-auto 2xl:w-[1400px]"
+		>
+			<p class="font-bold text-3xl pb-10">Как это работает</p>
+			<div class="flex items-center">
+				<div class="flex flex-col items-center cursor-pointer">
+					<img src="/assets/img/work1.png" alt="img" />
+					<p>
+						Оцените привлекательность <br />
+						темы
+					</p>
+				</div>
+				<img src="./assets/svg/workArrowRight.svg" alt="img" />
+				<div class="flex flex-col items-center cursor-pointer">
+					<img src="/assets/img/work2.png" alt="img" />
+					<p>
+						Выполните совместные <br />
+						исследования
+					</p>
+				</div>
+				<img src="./assets/svg/workArrowRight.svg" alt="img" />
+				<div class="flex flex-col items-center cursor-pointer">
+					<img src="/assets/img/work3.png" alt="img" />
+					<p>Улучшите написанную работу</p>
+				</div>
+				<img src="./assets/svg/workArrowRight.svg" alt="img" />
+				<div class="flex flex-col items-center cursor-pointer">
+					<img src="/assets/img/work4.png" alt="img" />
+					<p>Продвиньте свою работу</p>
+				</div>
+			</div>
+		</section>
+		<!-- community -->
+		<section
+			class="w-[90%] pt-20 m-auto 2xl:w-[1400px] flex flex-col py-10 items-center"
+		>
+			<p class="font-bold text-3xl">Сообщество</p>
+			<p class="text-xl text-[#464646]">
+				Тысячи учёных уже предлагают свою помощь
+			</p>
+			<!-- cards -->
+			<div class="grid grid-cols-3 mt-20 gap-5 pb-10">
+				<div
+					class="shadow-[0_22px_17px_0_rgba(43,123,211,0.06)] bg-[#fefeff] flex flex-col border border-gray-200 rounded-[10px] p-8 gap-5"
+				>
+					<div class="flex items-center space-x-2">
+						<span
+							class="px-3 py-1 text-xs font-bold text-yellow-600 bg-yellow-100 rounded-full"
+						>
+							Цитировать других
+						</span>
+						<span
+							class="px-3 py-1 text-xs font-bold text-green-600 bg-green-100 rounded-full"
+						>
+							Neuro/Psycho
+						</span>
+					</div>
+
+					<h2 class="text- font-bold">
+						Вопросы проектирования трансатлантического международного
+						продуктопровода в условиях нарастающей коронавирусной пандемии
+					</h2>
+
+					<p class="text-sm text-gray-600">
+						<strong>Комментарий:</strong> Могу ещё помочь со статистической
+						обработкой
+					</p>
+
+					<div>
+						<p class="text-sm font-semibold text-gray-900 pb-2">
+							Вознаграждение
+						</p>
+						<div class="flex gap-2 items-center">
+							<button
+								class="w-[190px] h-[40px] text-sm font-medium text-blue-600 border border-blue-600 rounded-full"
+							>
+								Процитировать других
+							</button>
+							<button
+								class="w-[190px] h-[40px] text-sm font-medium text-blue-600 border border-blue-600 rounded-full"
+							>
+								Принять в соавторы
+							</button>
+							<button
+								class="w-[40px] h-[40px] text-sm font-medium text-blue-600 border border-blue-600 rounded-2xl"
+							>
+								+1
+							</button>
+						</div>
+					</div>
+					<div class="flex space-x-2">
+						<button
+							class="flex items-center gap-2 px-3 py-1 text-xs font-medium text-gray-700 bg-gray-200 rounded-[10px]"
+						>
+							<img src="./assets/svg/pan.svg" alt="img" /> первый длинный ключ
+						</button>
+						<button
+							class="flex items-center gap-2 px-3 py-1 text-xs font-medium text-gray-700 bg-gray-200 rounded-[10px]"
+						>
+							<img src="./assets/svg/pan.svg" alt="img" />второй ключ
+						</button>
+						<button
+							class="px-3 py-1 text-xs font-medium text-gray-700 bg-gray-300 rounded-[10px]"
+						>
+							+1
+						</button>
+					</div>
+					<div
+						class="flex items-center gap-4 pt-3 border-b-2 pb-3 border-t-2 border-blue-500"
+					>
+						<img
+							src="./assets/img/Mask Group.png"
+							alt="Author"
+							class="w-12 h-12 rounded-full"
+						/>
+						<div>
+							<p class="text-sm font-semibold text-gray-900">Артём Белоусов</p>
+							<p class="text-sm text-gray-600">учёный (кандидат наук)</p>
+							<p class="text-sm text-gray-600">
+								Санкт-Петербургский горный университет
+							</p>
+						</div>
+					</div>
+					<div class="flex items-center gap-5">
+						<button
+							class="w-full py-3 text-sm font-semibold text-white bg-blue-600 rounded-lg hover:bg-blue-500"
+						>
+							Сотрудничество предложено
+						</button>
+						<img
+							class="cursor-pointer hover:bg-blue-300 rounded-3xl"
+							src="./assets/svg/arrowRightBlue.svg"
+							alt="img"
+						/>
+					</div>
+				</div>
+				<div
+					class="shadow-[0_22px_17px_0_rgba(43,123,211,0.06)] bg-[#fefeff] flex flex-col border border-gray-200 rounded-[10px] p-8 gap-5"
+				>
+					<div class="flex items-center space-x-2">
+						<span
+							class="px-3 py-1 text-xs font-bold text-yellow-600 bg-yellow-100 rounded-full"
+						>
+							Цитировать других
+						</span>
+						<span
+							class="px-3 py-1 text-xs font-bold text-green-600 bg-green-100 rounded-full"
+						>
+							Neuro/Psycho
+						</span>
+					</div>
+
+					<h2 class="text- font-bold">
+						Вопросы проектирования трансатлантического международного
+						продуктопровода в условиях нарастающей коронавирусной пандемии
+					</h2>
+
+					<p class="text-sm text-gray-600">
+						<strong>Комментарий:</strong> Могу ещё помочь со статистической
+						обработкой
+					</p>
+
+					<div>
+						<p class="text-sm font-semibold text-gray-900 pb-2">
+							Вознаграждение
+						</p>
+						<div class="flex gap-2 items-center">
+							<button
+								class="w-[190px] h-[40px] text-sm font-medium text-blue-600 border border-blue-600 rounded-full"
+							>
+								Процитировать других
+							</button>
+							<button
+								class="w-[190px] h-[40px] text-sm font-medium text-blue-600 border border-blue-600 rounded-full"
+							>
+								Принять в соавторы
+							</button>
+							<button
+								class="w-[40px] h-[40px] text-sm font-medium text-blue-600 border border-blue-600 rounded-2xl"
+							>
+								+1
+							</button>
+						</div>
+					</div>
+					<div class="flex space-x-2">
+						<button
+							class="flex items-center gap-2 px-3 py-1 text-xs font-medium text-gray-700 bg-gray-200 rounded-[10px]"
+						>
+							<img src="./assets/svg/pan.svg" alt="img" /> первый длинный ключ
+						</button>
+						<button
+							class="flex items-center gap-2 px-3 py-1 text-xs font-medium text-gray-700 bg-gray-200 rounded-[10px]"
+						>
+							<img src="./assets/svg/pan.svg" alt="img" />второй ключ
+						</button>
+						<button
+							class="px-3 py-1 text-xs font-medium text-gray-700 bg-gray-300 rounded-[10px]"
+						>
+							+1
+						</button>
+					</div>
+					<div
+						class="flex items-center gap-4 pt-3 border-b-2 pb-3 border-t-2 border-blue-500"
+					>
+						<img
+							src="./assets/img/Mask Group.png"
+							alt="Author"
+							class="w-12 h-12 rounded-full"
+						/>
+						<div>
+							<p class="text-sm font-semibold text-gray-900">Артём Белоусов</p>
+							<p class="text-sm text-gray-600">учёный (кандидат наук)</p>
+							<p class="text-sm text-gray-600">
+								Санкт-Петербургский горный университет
+							</p>
+						</div>
+					</div>
+					<div class="flex items-center gap-5">
+						<button
+							class="w-full py-3 text-sm font-semibold text-white bg-blue-600 rounded-lg hover:bg-blue-500"
+						>
+							Сотрудничество предложено
+						</button>
+						<img
+							class="cursor-pointer hover:bg-blue-300 rounded-3xl"
+							src="./assets/svg/arrowRightBlue.svg"
+							alt="img"
+						/>
+					</div>
+				</div>
+				<div
+					class="shadow-[0_22px_17px_0_rgba(43,123,211,0.06)] bg-[#fefeff] flex flex-col border border-gray-200 rounded-[10px] p-8 gap-5"
+				>
+					<div class="flex items-center space-x-2">
+						<span
+							class="px-3 py-1 text-xs font-bold text-yellow-600 bg-yellow-100 rounded-full"
+						>
+							Цитировать других
+						</span>
+						<span
+							class="px-3 py-1 text-xs font-bold text-green-600 bg-green-100 rounded-full"
+						>
+							Neuro/Psycho
+						</span>
+					</div>
+
+					<h2 class="text- font-bold">
+						Вопросы проектирования трансатлантического международного
+						продуктопровода в условиях нарастающей коронавирусной пандемии
+					</h2>
+
+					<p class="text-sm text-gray-600">
+						<strong>Комментарий:</strong> Могу ещё помочь со статистической
+						обработкой
+					</p>
+
+					<div>
+						<p class="text-sm font-semibold text-gray-900 pb-2">
+							Вознаграждение
+						</p>
+						<div class="flex gap-2 items-center">
+							<button
+								class="w-[190px] h-[40px] text-sm font-medium text-blue-600 border border-blue-600 rounded-full"
+							>
+								Процитировать других
+							</button>
+							<button
+								class="w-[190px] h-[40px] text-sm font-medium text-blue-600 border border-blue-600 rounded-full"
+							>
+								Принять в соавторы
+							</button>
+							<button
+								class="w-[40px] h-[40px] text-sm font-medium text-blue-600 border border-blue-600 rounded-2xl"
+							>
+								+1
+							</button>
+						</div>
+					</div>
+					<div class="flex space-x-2">
+						<button
+							class="flex items-center gap-2 px-3 py-1 text-xs font-medium text-gray-700 bg-gray-200 rounded-[10px]"
+						>
+							<img src="./assets/svg/pan.svg" alt="img" /> первый длинный ключ
+						</button>
+						<button
+							class="flex items-center gap-2 px-3 py-1 text-xs font-medium text-gray-700 bg-gray-200 rounded-[10px]"
+						>
+							<img src="./assets/svg/pan.svg" alt="img" />второй ключ
+						</button>
+						<button
+							class="px-3 py-1 text-xs font-medium text-gray-700 bg-gray-300 rounded-[10px]"
+						>
+							+1
+						</button>
+					</div>
+					<div
+						class="flex items-center gap-4 pt-3 border-b-2 pb-3 border-t-2 border-blue-500"
+					>
+						<img
+							src="./assets/img/Mask Group.png"
+							alt="Author"
+							class="w-12 h-12 rounded-full"
+						/>
+						<div>
+							<p class="text-sm font-semibold text-gray-900">Артём Белоусов</p>
+							<p class="text-sm text-gray-600">учёный (кандидат наук)</p>
+							<p class="text-sm text-gray-600">
+								Санкт-Петербургский горный университет
+							</p>
+						</div>
+					</div>
+					<div class="flex items-center gap-5">
+						<button
+							class="w-full py-3 text-sm font-semibold text-white bg-blue-600 rounded-lg hover:bg-blue-500"
+						>
+							Сотрудничество предложено
+						</button>
+						<img
+							class="cursor-pointer hover:bg-blue-300 rounded-3xl"
+							src="./assets/svg/arrowRightBlue.svg"
+							alt="img"
+						/>
+					</div>
+				</div>
+				<div
+					class="shadow-[0_22px_17px_0_rgba(43,123,211,0.06)] bg-[#fefeff] flex flex-col border border-gray-200 rounded-[10px] p-8 gap-5"
+				>
+					<div class="flex items-center space-x-2">
+						<span
+							class="px-3 py-1 text-xs font-bold text-yellow-600 bg-yellow-100 rounded-full"
+						>
+							Цитировать других
+						</span>
+						<span
+							class="px-3 py-1 text-xs font-bold text-green-600 bg-green-100 rounded-full"
+						>
+							Neuro/Psycho
+						</span>
+					</div>
+
+					<h2 class="text- font-bold">
+						Вопросы проектирования трансатлантического международного
+						продуктопровода в условиях нарастающей коронавирусной пандемии
+					</h2>
+
+					<p class="text-sm text-gray-600">
+						<strong>Комментарий:</strong> Могу ещё помочь со статистической
+						обработкой
+					</p>
+
+					<div>
+						<p class="text-sm font-semibold text-gray-900 pb-2">
+							Вознаграждение
+						</p>
+						<div class="flex gap-2 items-center">
+							<button
+								class="w-[190px] h-[40px] text-sm font-medium text-blue-600 border border-blue-600 rounded-full"
+							>
+								Процитировать других
+							</button>
+							<button
+								class="w-[190px] h-[40px] text-sm font-medium text-blue-600 border border-blue-600 rounded-full"
+							>
+								Принять в соавторы
+							</button>
+							<button
+								class="w-[40px] h-[40px] text-sm font-medium text-blue-600 border border-blue-600 rounded-2xl"
+							>
+								+1
+							</button>
+						</div>
+					</div>
+					<div class="flex space-x-2">
+						<button
+							class="flex items-center gap-2 px-3 py-1 text-xs font-medium text-gray-700 bg-gray-200 rounded-[10px]"
+						>
+							<img src="./assets/svg/pan.svg" alt="img" /> первый длинный ключ
+						</button>
+						<button
+							class="flex items-center gap-2 px-3 py-1 text-xs font-medium text-gray-700 bg-gray-200 rounded-[10px]"
+						>
+							<img src="./assets/svg/pan.svg" alt="img" />второй ключ
+						</button>
+						<button
+							class="px-3 py-1 text-xs font-medium text-gray-700 bg-gray-300 rounded-[10px]"
+						>
+							+1
+						</button>
+					</div>
+					<div
+						class="flex items-center gap-4 pt-3 border-b-2 pb-3 border-t-2 border-blue-500"
+					>
+						<img
+							src="./assets/img/Mask Group.png"
+							alt="Author"
+							class="w-12 h-12 rounded-full"
+						/>
+						<div>
+							<p class="text-sm font-semibold text-gray-900">Артём Белоусов</p>
+							<p class="text-sm text-gray-600">учёный (кандидат наук)</p>
+							<p class="text-sm text-gray-600">
+								Санкт-Петербургский горный университет
+							</p>
+						</div>
+					</div>
+					<div class="flex items-center gap-5">
+						<button
+							class="w-full py-3 text-sm font-semibold text-white bg-blue-600 rounded-lg hover:bg-blue-500"
+						>
+							Сотрудничество предложено
+						</button>
+						<img
+							class="cursor-pointer hover:bg-blue-300 rounded-3xl"
+							src="./assets/svg/arrowRightBlue.svg"
+							alt="img"
+						/>
+					</div>
+				</div>
+				<div
+					class="shadow-[0_22px_17px_0_rgba(43,123,211,0.06)] bg-[#fefeff] flex flex-col border border-gray-200 rounded-[10px] p-8 gap-5"
+				>
+					<div class="flex items-center space-x-2">
+						<span
+							class="px-3 py-1 text-xs font-bold text-yellow-600 bg-yellow-100 rounded-full"
+						>
+							Цитировать других
+						</span>
+						<span
+							class="px-3 py-1 text-xs font-bold text-green-600 bg-green-100 rounded-full"
+						>
+							Neuro/Psycho
+						</span>
+					</div>
+
+					<h2 class="text- font-bold">
+						Вопросы проектирования трансатлантического международного
+						продуктопровода в условиях нарастающей коронавирусной пандемии
+					</h2>
+
+					<p class="text-sm text-gray-600">
+						<strong>Комментарий:</strong> Могу ещё помочь со статистической
+						обработкой
+					</p>
+
+					<div>
+						<p class="text-sm font-semibold text-gray-900 pb-2">
+							Вознаграждение
+						</p>
+						<div class="flex gap-2 items-center">
+							<button
+								class="w-[190px] h-[40px] text-sm font-medium text-blue-600 border border-blue-600 rounded-full"
+							>
+								Процитировать других
+							</button>
+							<button
+								class="w-[190px] h-[40px] text-sm font-medium text-blue-600 border border-blue-600 rounded-full"
+							>
+								Принять в соавторы
+							</button>
+							<button
+								class="w-[40px] h-[40px] text-sm font-medium text-blue-600 border border-blue-600 rounded-2xl"
+							>
+								+1
+							</button>
+						</div>
+					</div>
+					<div class="flex space-x-2">
+						<button
+							class="flex items-center gap-2 px-3 py-1 text-xs font-medium text-gray-700 bg-gray-200 rounded-[10px]"
+						>
+							<img src="./assets/svg/pan.svg" alt="img" /> первый длинный ключ
+						</button>
+						<button
+							class="flex items-center gap-2 px-3 py-1 text-xs font-medium text-gray-700 bg-gray-200 rounded-[10px]"
+						>
+							<img src="./assets/svg/pan.svg" alt="img" />второй ключ
+						</button>
+						<button
+							class="px-3 py-1 text-xs font-medium text-gray-700 bg-gray-300 rounded-[10px]"
+						>
+							+1
+						</button>
+					</div>
+					<div
+						class="flex items-center gap-4 pt-3 border-b-2 pb-3 border-t-2 border-blue-500"
+					>
+						<img
+							src="./assets/img/Mask Group.png"
+							alt="Author"
+							class="w-12 h-12 rounded-full"
+						/>
+						<div>
+							<p class="text-sm font-semibold text-gray-900">Артём Белоусов</p>
+							<p class="text-sm text-gray-600">учёный (кандидат наук)</p>
+							<p class="text-sm text-gray-600">
+								Санкт-Петербургский горный университет
+							</p>
+						</div>
+					</div>
+					<div class="flex items-center gap-5">
+						<button
+							class="w-full py-3 text-sm font-semibold text-white bg-blue-600 rounded-lg hover:bg-blue-500"
+						>
+							Сотрудничество предложено
+						</button>
+						<img
+							class="cursor-pointer hover:bg-blue-300 rounded-3xl"
+							src="./assets/svg/arrowRightBlue.svg"
+							alt="img"
+						/>
+					</div>
+				</div>
+				<div
+					class="shadow-[0_22px_17px_0_rgba(43,123,211,0.06)] bg-[#fefeff] flex flex-col border border-gray-200 rounded-[10px] p-8 gap-5"
+				>
+					<div class="flex items-center space-x-2">
+						<span
+							class="px-3 py-1 text-xs font-bold text-yellow-600 bg-yellow-100 rounded-full"
+						>
+							Цитировать других
+						</span>
+						<span
+							class="px-3 py-1 text-xs font-bold text-green-600 bg-green-100 rounded-full"
+						>
+							Neuro/Psycho
+						</span>
+					</div>
+
+					<h2 class="text- font-bold">
+						Вопросы проектирования трансатлантического международного
+						продуктопровода в условиях нарастающей коронавирусной пандемии
+					</h2>
+
+					<p class="text-sm text-gray-600">
+						<strong>Комментарий:</strong> Могу ещё помочь со статистической
+						обработкой
+					</p>
+
+					<div>
+						<p class="text-sm font-semibold text-gray-900 pb-2">
+							Вознаграждение
+						</p>
+						<div class="flex gap-2 items-center">
+							<button
+								class="w-[190px] h-[40px] text-sm font-medium text-blue-600 border border-blue-600 rounded-full"
+							>
+								Процитировать других
+							</button>
+							<button
+								class="w-[190px] h-[40px] text-sm font-medium text-blue-600 border border-blue-600 rounded-full"
+							>
+								Принять в соавторы
+							</button>
+							<button
+								class="w-[40px] h-[40px] text-sm font-medium text-blue-600 border border-blue-600 rounded-2xl"
+							>
+								+1
+							</button>
+						</div>
+					</div>
+					<div class="flex space-x-2">
+						<button
+							class="flex items-center gap-2 px-3 py-1 text-xs font-medium text-gray-700 bg-gray-200 rounded-[10px]"
+						>
+							<img src="./assets/svg/pan.svg" alt="img" /> первый длинный ключ
+						</button>
+						<button
+							class="flex items-center gap-2 px-3 py-1 text-xs font-medium text-gray-700 bg-gray-200 rounded-[10px]"
+						>
+							<img src="./assets/svg/pan.svg" alt="img" />второй ключ
+						</button>
+						<button
+							class="px-3 py-1 text-xs font-medium text-gray-700 bg-gray-300 rounded-[10px]"
+						>
+							+1
+						</button>
+					</div>
+					<div
+						class="flex items-center gap-4 pt-3 border-b-2 pb-3 border-t-2 border-blue-500"
+					>
+						<img
+							src="./assets/img/Mask Group.png"
+							alt="Author"
+							class="w-12 h-12 rounded-full"
+						/>
+						<div>
+							<p class="text-sm font-semibold text-gray-900">Артём Белоусов</p>
+							<p class="text-sm text-gray-600">учёный (кандидат наук)</p>
+							<p class="text-sm text-gray-600">
+								Санкт-Петербургский горный университет
+							</p>
+						</div>
+					</div>
+					<div class="flex items-center gap-5">
+						<button
+							class="w-full py-3 text-sm font-semibold text-white bg-blue-600 rounded-lg hover:bg-blue-500"
+						>
+							Сотрудничество предложено
+						</button>
+						<img
+							class="cursor-pointer hover:bg-blue-300 rounded-3xl"
+							src="./assets/svg/arrowRightBlue.svg"
+							alt="img"
+						/>
+					</div>
+				</div>
+			</div>
+			<!-- btn solo -->
+			<button
+				class="font-bold px-20 py-5 text-blue-500 rounded-full border border-blue-500 hover:bg-blue-200"
+			>
+				Смотреть все
+			</button>
+		</section>
+		<!-- footer -->
+		<footer class="bg-[#262628]">
+			<div
+				class="justify-around w-[90%] pt-10 pb-10 m-auto 2xl:w-[1400px] flex items-center"
+			>
+				<div class="text-start text-white">
+					<p>
+						Authortie <br />
+						© Все права защищены
+					</p>
+				</div>
+				<div class="flex items-center gap-10 text-white">
+					<p class="cursor-pointer hover:text-blue-400">
+						Политика конфиденциальности
+					</p>
+					<p class="cursor-pointer hover:text-blue-400">Аналитика</p>
+					<p class="cursor-pointer hover:text-blue-400">Сообщество</p>
+					<p class="cursor-pointer hover:text-blue-400">Для организаций</p>
+				</div>
+				<div class="flex items-center gap-8">
+					<img
+						class="cursor-pointer"
+						src="./assets/svg/facrbook.svg"
+						alt="img"
+					/>
+					<img
+						class="cursor-pointer"
+						src="./assets/svg/instagram.svg"
+						alt="img"
+					/>
+					<img
+						class="cursor-pointer"
+						src="./assets/svg/telegram.svg"
+						alt="img"
+					/>
+				</div>
+			</div>
+		</footer>
+	</body>
 </html>

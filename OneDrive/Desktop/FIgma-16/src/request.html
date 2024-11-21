@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Figma-16</title>
+		<link rel="stylesheet" href="./output.css" />
+	</head>
+	<body>
+		<!-- nav -->
+		<nav class="w-[90%] m-auto 2xl:w-[1400px] flex justify-between pt-5 pb-5">
+			<!-- left -->
+			<div class="flex items-center gap-16">
+				<div class="flex">
+					<a class="flex gap-2" href="../index.html">
+						<img
+							class="cursor-pointer"
+							src="../assets/svg/Logo.svg"
+							alt="Logo"
+						/>
+						<img
+							class="cursor-pointer"
+							src="../assets/img/logo-photo.png"
+							alt="Logo"
+						/>
+					</a>
+				</div>
+				<ul class="flex gap-6 text-[#575756]">
+					<li class="hover:text-blue-500 text-sm"><a href="">Аналитика</a></li>
+					<li class="hover:text-blue-500 text-sm"><a href="">Сообщество</a></li>
+					<li class="hover:text-blue-500 text-sm">
+						<a href="">Для организаций</a>
+					</li>
+				</ul>
+				<div class="flex items-center gap-2 cursor-pointer">
+					<img src="../assets/svg/earthBlack.svg" alt="img" />
+					<p>RU</p>
+					<img src="../assets/svg/arrowBottom.svg" alt="img" />
+				</div>
+			</div>
+			<!-- right -->
+			<div class="flex gap-10 items-center justify-center">
+				<a href="#"
+					><button
+						class="w-[200px] py-3 text-[#3a85f4] rounded-full border border-[#3a85f4] hover:bg-blue-100"
+					>
+						Создать заявку
+					</button></a
+				>
+				<img class="cursor-pointer" src="../assets/img/chats.png" alt="earth" />
+				<img
+					class="cursor-pointer"
+					src="../assets/img/notifications.png"
+					alt="earth"
+				/>
+				<img
+					class="cursor-pointer"
+					src="../assets/svg/person.svg"
+					alt="earth"
+				/>
+			</div>
+		</nav>
+
+		<section class="bg-[#e7e7e7]">
+			<!-- text -->
+			<div class="w-[90%] m-auto 2xl:w-[1400px] flex flex-col">
+				<p class="w-[90%] m-auto 2xl:w-[1400px] pb-10 pt-10 font-bold text-4xl">
+					Создание заявки
+				</p>
+
+				<div class="min-h-screen">
+					<!-- top -->
+					<div class="flex justify-between items-center border-gray-200">
+						<div class="flex">
+							<button
+								class="py-2 px-16 text-blue-500 font-semibold bg-[#99afd3] rounded-lg hover:bg-blue-400 hover:text-white"
+							>
+								Я заказчик
+							</button>
+							<button
+								class="py-2 px-16 text-[#c8d2e2] font-semibold bg-[#6b88b6] rounded-lg hover:bg-blue-400 hover:text-white"
+							>
+								Я исполнитель
+							</button>
+						</div>
+						<a href="#" class="hover:underline"
+							>Для публикации заявки вам необходимо
+							<span class="text-blue-500 hover:underline">
+								зарегистрироваться.</span
+							>
+						</a>
+					</div>
+
+					<!-- Form Content -->
+					<div class="bg-blue-50 rounded-lg shadow-md p-6">
+						<!-- Radio Buttons Section -->
+						<div
+							class="grid grid-cols-2 gap-6 shadow-md bg-white rounded-lg p-6 pl-20"
+						>
+							<!-- Left Section -->
+							<div>
+								<h3 class="text-lg font-semibold text-blue-500">Я хочу</h3>
+								<div class="mt-4 space-y-2">
+									<label class="flex items-center space-x-2">
+										<input
+											type="radio"
+											name="want"
+											class="text-blue-500 focus:ring-blue-400"
+										/>
+										<span>Повысить цитируемость своих работ</span>
+									</label>
+									<label class="flex items-center space-x-2">
+										<input
+											type="radio"
+											name="want"
+											class="text-blue-500 focus:ring-blue-400"
+										/>
+										<span>Стать соавтором</span>
+									</label>
+									<label class="flex items-center space-x-2">
+										<input
+											type="radio"
+											name="want"
+											class="text-blue-500 focus:ring-blue-400"
+										/>
+										<span>Заказать исследование</span>
+									</label>
+									<label class="flex items-center space-x-2">
+										<input
+											type="radio"
+											name="want"
+											class="text-blue-500 focus:ring-blue-400"
+										/>
+										<span>Заказать работу с текстом и графикой</span>
+									</label>
+									<label class="flex items-center space-x-2">
+										<input
+											type="radio"
+											name="want"
+											class="text-blue-500 focus:ring-blue-400"
+										/>
+										<span>Найти эксперта</span>
+									</label>
+									<label class="flex items-center space-x-2">
+										<input
+											type="radio"
+											name="want"
+											class="text-blue-500 focus:ring-blue-400"
+										/>
+										<span>Повысить цитируемость своих работ</span>
+									</label>
+									<label class="flex items-center space-x-2">
+										<input
+											type="radio"
+											name="want"
+											class="text-blue-500 focus:ring-blue-400"
+										/>
+										<span>Стать соавтором</span>
+									</label>
+									<label class="flex items-center space-x-2">
+										<input
+											type="radio"
+											name="want"
+											class="text-blue-500 focus:ring-blue-400"
+										/>
+										<span>Заказать исследования</span>
+									</label>
+									<label class="flex items-center space-x-2">
+										<input
+											type="radio"
+											name="want"
+											class="text-blue-500 focus:ring-blue-400"
+										/>
+										<span>Заказать работу с текстом и графикой</span>
+									</label>
+									<label class="flex items-center space-x-2">
+										<input
+											type="radio"
+											name="want"
+											class="text-blue-500 focus:ring-blue-400"
+										/>
+										<span>Найти эксперта</span>
+									</label>
+									<!-- Add more radio buttons as needed -->
+								</div>
+							</div>
+							<!-- Right Section -->
+							<div>
+								<h3 class="text-lg font-semibold text-blue-500">Я предлагаю</h3>
+								<div class="mt-4 space-y-2">
+									<label class="flex items-center space-x-2">
+										<input
+											type="radio"
+											name="offer"
+											class="text-blue-500 focus:ring-blue-400"
+										/>
+										<span>Повысить цитируемость своих работ</span>
+									</label>
+									<label class="flex items-center space-x-2">
+										<input
+											type="radio"
+											name="offer"
+											class="text-blue-500 focus:ring-blue-400"
+										/>
+										<span>Стать соавтором</span>
+									</label>
+									<label class="flex items-center space-x-2">
+										<input
+											type="radio"
+											name="offer"
+											class="text-blue-500 focus:ring-blue-400"
+										/>
+										<span>Заказать исследование</span>
+									</label>
+									<label class="flex items-center space-x-2">
+										<input
+											type="radio"
+											name="offer"
+											class="text-blue-500 focus:ring-blue-400"
+										/>
+										<span>Заказать работу с текстом и графикой</span>
+									</label>
+									<label class="flex items-center space-x-2">
+										<input
+											type="radio"
+											name="offer"
+											class="text-blue-500 focus:ring-blue-400"
+										/>
+										<span>Найти эксперта</span>
+									</label>
+									<label class="flex items-center space-x-2">
+										<input
+											type="radio"
+											name="offer"
+											class="text-blue-500 focus:ring-blue-400"
+										/>
+										<span>Повысить цитируемость своих работ</span>
+									</label>
+									<label class="flex items-center space-x-2">
+										<input
+											type="radio"
+											name="offer"
+											class="text-blue-500 focus:ring-blue-400"
+										/>
+										<span>Стать соавтором</span>
+									</label>
+									<label class="flex items-center space-x-2">
+										<input
+											type="radio"
+											name="offer"
+											class="text-blue-500 focus:ring-blue-400"
+										/>
+										<span>Заказать исследования</span>
+									</label>
+									<label class="flex items-center space-x-2">
+										<input
+											type="radio"
+											name="offer"
+											class="text-blue-500 focus:ring-blue-400"
+										/>
+										<span>Заказать работу с текстом и графикой</span>
+									</label>
+									<label class="flex items-center space-x-2">
+										<input
+											type="radio"
+											name="offer"
+											class="text-blue-500 focus:ring-blue-400"
+										/>
+										<span>Найти эксперта</span>
+									</label>
+								</div>
+							</div>
+						</div>
+
+						<!-- Description -->
+						<div class="mt-6">
+							<h3 class="text-lg font-semibold text-blue-700 hover:underline">
+								Описание работы
+							</h3>
+							<textarea
+								class="mt-2 w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
+								rows="4"
+								placeholder="Введите описание"
+							></textarea>
+						</div>
+
+						<!-- Keywords and Fields -->
+						<div class="mt-6 grid grid-cols-[2fr_2fr_1fr] gap-6">
+							<div class="shadow-md gap-6 bg-white rounded-lg p-6">
+								<h3
+									class="flex items-center gap-2 text-lg font-semibold text-blue-600"
+								>
+									<img src="../assets/svg/pan.svg" alt="img" />
+									Ключевые слова
+								</h3>
+								<div class="mt-2 space-y-2">
+									<div class="flex flex-wrap gap-2 space-x-2">
+										<span
+											class="flex items-center gap-3 border border-gray-500 px-2 rounded-full text-sm hover:bg-blue-200"
+											>первый и очень сильно длинный ключ
+											<img
+												class="pt-[4px]"
+												src="../assets/svg/x.svg"
+												alt="img"
+											/>
+										</span>
+										<span
+											class="flex items-center gap-3 border border-gray-500 px-2 rounded-full text-sm hover:bg-blue-200"
+											>второй ключ
+											<img
+												class="pt-[4px]"
+												src="../assets/svg/x.svg"
+												alt="img"
+											/>
+										</span>
+										<span
+											class="flex items-center gap-3 border border-gray-500 px-2 rounded-full text-sm hover:bg-blue-200"
+											>третий ключ
+											<img
+												class="pt-[4px]"
+												src="../assets/svg/x.svg"
+												alt="img"
+											/>
+										</span>
+										<span
+											class="flex items-center gap-3 border border-gray-500 px-2 rounded-full text-sm hover:bg-blue-200"
+											>четвертый ключ
+											<img
+												class="pt-[4px]"
+												src="../assets/svg/x.svg"
+												alt="img"
+											/>
+										</span>
+										<span
+											class="flex items-center gap-3 border border-gray-500 px-2 rounded-full text-sm hover:bg-blue-200"
+											>пятый ключ
+											<img
+												class="pt-[4px]"
+												src="../assets/svg/x.svg"
+												alt="img"
+											/>
+										</span>
+										<span
+											class="flex items-center gap-3 border border-gray-500 px-2 rounded-full text-sm hover:bg-blue-200"
+											>шестой ключ
+											<img
+												class="pt-[4px]"
+												src="../assets/svg/x.svg"
+												alt="img"
+											/>
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="shadow-md gap-6 bg-white rounded-lg p-6">
+								<h3
+									class="flex items-center gap-3 text-lg font-semibold text-blue-600"
+								>
+									<img src="../assets/svg/destrict.svg" alt="img" />
+									Область знаний
+								</h3>
+								<div class="flex items-center mt-2 gap-3 space-y-2">
+									<div class="flex flex-col">
+										<label class="flex items-center space-x-2">
+											<input
+												type="checkbox"
+												class="text-blue-500 focus:ring-blue-400"
+											/>
+											<span>Biology/Genetics</span>
+										</label>
+										<label class="flex items-center space-x-2">
+											<input
+												type="checkbox"
+												class="text-blue-500 focus:ring-blue-400"
+											/>
+											<span>Math/Computer</span>
+										</label>
+										<label class="flex items-center space-x-2">
+											<input
+												type="checkbox"
+												class="text-blue-500 focus:ring-blue-400"
+											/>
+											<span>Social</span>
+										</label>
+									</div>
+									<div class="flex flex-col">
+										<label class="flex items-center space-x-2">
+											<input
+												type="checkbox"
+												class="text-blue-500 focus:ring-blue-400"
+											/>
+											<span>Biology/Genetics</span>
+										</label>
+										<label class="flex items-center space-x-2">
+											<input
+												type="checkbox"
+												class="text-blue-500 focus:ring-blue-400"
+											/>
+											<span>Math/Computer</span>
+										</label>
+										<label class="flex items-center space-x-2">
+											<input
+												type="checkbox"
+												class="text-blue-500 focus:ring-blue-400"
+											/>
+											<span>Social</span>
+										</label>
+									</div>
+									<div class="flex flex-col">
+										<label class="flex items-center space-x-2">
+											<input
+												type="checkbox"
+												class="text-blue-500 focus:ring-blue-400"
+											/>
+											<span>Biology/Genetics</span>
+										</label>
+										<label class="flex items-center space-x-2">
+											<input
+												type="checkbox"
+												class="text-blue-500 focus:ring-blue-400"
+											/>
+											<span>Math/Computer</span>
+										</label>
+										<label class="flex items-center space-x-2">
+											<input
+												type="checkbox"
+												class="text-blue-500 focus:ring-blue-400"
+											/>
+											<span>Social</span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="shadow-md gap-6 bg-white rounded-lg p-6">
+								<h3 class="text-lg font-semibold text-blue-600 pb-6">
+									Срок исполнения
+								</h3>
+								<div class="flex items-center">
+									<input type="text" placeholder="__ /__ / ___" />
+									<img src="../assets/svg/schudle.svg" alt="img" />
+								</div>
+							</div>
+						</div>
+
+						<!-- Deadline -->
+						<div class="mt-6 flex justify-between items-center">
+							<p class="text-[#b0bfdb] text-sm">
+								Пример: Первый ключ; Второй ключ;
+							</p>
+							<div class="flex items-center gap-3 text-[#656565]">
+								<img src="../assets/svg/eye.svg" alt="img" />
+								<p>Приватная заявка</p>
+							</div>
+							<div class="flex items-center gap-3 text-blue-300">
+								<img src="../assets/svg/busket.svg" alt="img" />
+								<p>Удалить заявку</p>
+							</div>
+						</div>
+					</div>
+					<!-- Submit Button -->
+					<div class="flex justify-center items-center gap-10 pt-6">
+						<button
+							class="flex items-center gap-5 font-bold px-20 py-2 text-blue-500 rounded-full border border-blue-500 hover:bg-blue-200"
+						>
+							<img src="../assets/img/+.png" alt="img" />
+							добавить заявку
+						</button>
+						<button
+							class="bg-blue-500 text-white py-3 px-28 rounded-full hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
+						>
+							Зарегистрироваться и Опубликовать
+						</button>
+					</div>
+
+					<div class="flex justify-center items-center pt-6 pb-10">
+						<p class="text-center">
+							Вам не придется заново заполнять форму, после регистрации <br />
+							ваша заявка будет отправлена на публикацию.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- footer -->
+		<footer class="bg-[#262628]">
+			<div
+				class="justify-between w-[90%] pt-5 pb-5 m-auto 2xl:w-[1400px] flex items-center"
+			>
+				<div class="text-start text-white">
+					<p>
+						Authortie <br />
+						© Все права защищены
+					</p>
+				</div>
+				<div class="flex items-center gap-10 text-white">
+					<p class="cursor-pointer hover:text-blue-400">
+						Политика конфиденциальности
+					</p>
+					<p class="cursor-pointer hover:text-blue-400">Аналитика</p>
+					<p class="cursor-pointer hover:text-blue-400">Сообщество</p>
+					<p class="cursor-pointer hover:text-blue-400">Для организаций</p>
+				</div>
+				<div class="flex items-center gap-8">
+					<img
+						class="cursor-pointer"
+						src="../assets/svg/facrbook.svg"
+						alt="img"
+					/>
+					<img
+						class="cursor-pointer"
+						src="../assets/svg/instagram.svg"
+						alt="img"
+					/>
+					<img
+						class="cursor-pointer"
+						src="../assets/svg/telegram.svg"
+						alt="img"
+					/>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
